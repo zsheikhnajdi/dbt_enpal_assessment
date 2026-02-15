@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: rep_sales_funnel_monthly
+    description: Monthly sales funnel report (draft skeleton).
+    columns:
+      - name: month
+        tests: [not_null]
+      - name: kpi_name
+        tests: [not_null]
+      - name: funnel_step
+        tests: [not_null]
+      - name: deals_count
+        tests: [not_null]

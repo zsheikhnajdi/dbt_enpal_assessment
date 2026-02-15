@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: pipedrive
+    description: "Raw Pipedrive CRM data loaded via Docker into Postgres"
+    schema: public
+    tables:
+      - name: deal_changes
+        description: "Historical log of deal field changes including stage transitions"
+
+      - name: stages
+        description: "Sales funnel stage definitions"
+
+      - name: activity
+        description: "Sales activities such as calls and meetings linked to deals"
+
+      - name: activity_types
+        description: "Lookup table for activity type definitions"
+
+      - name: users
+        description: "CRM users and deal owners"
+
+      - name: fields
+        description: "Metadata for dynamic Pipedrive CRM fields"

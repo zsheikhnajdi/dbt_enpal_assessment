@@ -1,0 +1,21 @@
+# dbt build artifacts
+target/
+dbt_packages/
+logs/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Local dbt user config
+.user.yml
+
+# DO NOT commit credentials
+profiles.yml
+
+# IDE
+.vscode/
